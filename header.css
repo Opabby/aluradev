@@ -42,3 +42,29 @@
 .header_user--photo{
     margin-right: .5rem;
 }
+
+@media screen and (min-width: 768px){
+    .header_icons--search{
+        display: none;
+    }
+
+    .header_searchbar{
+        display: inline-block;
+        margin-left: 6rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .header_icons--menu{
+        display: none;
+    }
+
+    .header_searchbar{
+        margin-left: 7.5rem;
+    }
+
+    .header_user{
+        display: flex;
+        align-items: center;
+    }
+}
