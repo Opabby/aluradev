@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo{
+    display: flex;
+    align-items: center;
+    width: 2rem;
+
+}
+
+.header_logo--alura{
+    margin-right: .5rem
+}
+
+.header_searchbar{
+    width: 60%;
+    height: 3rem;
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.16);
+    border: none;
+}
+
+.header_user{
+    display: flex;
+}
+
+.header_user--photo{
+    margin-right: .5rem;
+}
