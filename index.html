@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allura Dev</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/main.css">
@@ -26,10 +28,26 @@
         </div>
     </header>
     <main class="main">
-        <div class="main_menu">
-            <span class="main_menu--text">MENU</span>
-            <div class="main_menu--icon"></div>
-            <div class="main_menu--icon"></div>
+        <nav class="main_nav">
+            <span class="main_nav--title text-transform">MENU</span>
+            <div class="main_nav--page">
+                <img class="nav_page--icon" src="/images/icon_code.svg">
+                <a href="#" class="nav_page--link">Editor de código</a>
+            </div>
+            <div class="main_nav--page">
+                <img class="nav_page--icon" src="/images/icon_users.svg">
+                <a href="#" class="nav_page--link">Comunidade</a>
+            </div>
+        </nav>
+        <div class="bluecard">
+            <div class="container_editor">
+                <div class="editor_buttons">
+                    <button class="editor_button--red"></button>
+                    <button class="editor_button--yellow"></button>
+                    <button class="editor_button--green"></button>
+                </div>
+                <textarea class="editor" id="editor" placeholder="Type code here"></textarea>
+            </div>
         </div>
     </main>
 </body>
