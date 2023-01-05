@@ -31,3 +31,12 @@ body{
     text-transform: uppercase;
     line-height: 18px;
 }
+
+.button{
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+}
