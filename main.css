@@ -31,7 +31,7 @@
     height: auto;
 }
 
-.bluecard{
+.card{
     background-color: var(--light-blue);
     width: 100%;
     border-radius: 8px;
@@ -80,6 +80,7 @@
     border: none;
     background-color: var(--dark-gray);
     color: var(--white);
+    font-family: 'Inter';
 }
 
 .editor_highlight{
@@ -92,6 +93,40 @@
     border-radius: 8px;
     color: var(--white);
     margin-bottom: 3rem;;
+}
+
+.main_form--projeto, .main_form--personalizacao{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-bottom: 2rem;
+}
+
+#nome_projeto, #descricao_projeto, .form_personalizacao--linguagem{
+    padding: 1rem .5rem;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Inter' !important;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.form_personalizacao--linguagem{
+    color: var(--white);
+    opacity: .5;
+}
+
+.form_personalizacao--cardcolor{
+    height: 2.7rem;
+    border-radius: 8px;
+}
+
+.light-blue{
+    background-color: var(--light-blue);
+}
+
+.main_form--button{
+    background-color: var(--blue);
+    color: var(--dark-blue);
 }
 
 @media screen and (min-width: 1024px){
