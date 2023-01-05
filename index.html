@@ -40,7 +40,7 @@
             </div>
         </nav>
         <div class="main_editor">
-            <div class="bluecard">
+            <div class="card">
                 <div class="container_editor">
                     <div class="editor_buttons">
                         <button class="editor_button--red"></button>
@@ -51,6 +51,23 @@
                 </div>
             </div>
             <button class="editor_highlight">Visualizar com highlight</button>
+        </div>
+        <div class="main_form">
+            <form class="main_form--projeto">
+                <span class="form_projeto--seuprojeto text-transform">Seu projeto</span>
+                <input id="nome_projeto" type="text" placeholder="Nome do seu projeto">
+                <textarea id="descricao_projeto" placeholder="Descrição do seu projeto"></textarea>
+            </form>
+            <form class="main_form--personalizacao">
+                <span class="text-transform">Personalização</span>
+                <select class="form_personalizacao--linguagem">
+                    <option selected value="javascript">JavaScript</option>
+                </select>
+                <select class="form_personalizacao--cardcolor light-blue">
+                    <option selected value="light-blue"></option>
+                </select>
+            </form>
+            <button class="main_form--button button">Salvar projeto</button>
         </div>
     </main>
 </body>
