@@ -1,7 +1,9 @@
 .main{
     margin-top: 6rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .main_nav{
@@ -24,12 +26,19 @@
     opacity: 1;
 }
 
+.main_editor{
+    width: 100%;
+    height: auto;
+}
+
 .bluecard{
     background-color: var(--light-blue);
     width: 100%;
     border-radius: 8px;
     padding: 2rem; 
     height: auto;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
 }
 
 .container_editor{
@@ -71,6 +80,18 @@
     border: none;
     background-color: var(--dark-gray);
     color: var(--white);
+}
+
+.editor_highlight{
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: var(--blue-transparent);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    margin-bottom: 3rem;;
 }
 
 @media screen and (min-width: 1024px){
