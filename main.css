@@ -110,14 +110,24 @@
     background: rgba(255, 255, 255, 0.16);
 }
 
+.form_personalizacao{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
 .form_personalizacao--linguagem{
     color: var(--white);
     opacity: .5;
+    width: 100%;
 }
 
 .form_personalizacao--cardcolor{
-    height: 2.7rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    height: 3.1rem;
     border-radius: 8px;
+    width: 100%;
 }
 
 .light-blue{
@@ -129,11 +139,36 @@
     color: var(--dark-blue);
 }
 
+@media screen and (min-width: 768px){
+    .form_personalizacao{
+        flex-direction: row;
+    }
+    .form_personalizacao--linguagem, .form_personalizacao--cardcolor{
+        width: 50% !important;
+    }
+}
+
 @media screen and (min-width: 1024px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+    .main_nav{
+        grid-column: 1/2;
+    }
     .main_nav, .main_nav--list{
         display: flex;
         flex-direction: column;
         gap: 2rem;
         padding-left: 0;
+    }
+    .main_editor{
+        margin-left: -1.5rem;
+        width: auto;
+        grid-column: 2/5;
+    }
+    .main_form{
+        grid-column: 5/6;
     }
 }
