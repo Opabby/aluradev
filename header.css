@@ -20,8 +20,32 @@
     gap: 2rem;
 }
 
+.search_button, .menu_button{
+    background-color: unset;
+    border: none;
+}
+
+.search{
+    background-image: url(./images/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hamburger{
+    background-image: url(./images/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.close{
+    background-image: url(./images/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .header_icons--search, .header_icons--menu{
     width: 1.25rem;
+    height: 1.25rem;
 }
 
 .header_searchbar{

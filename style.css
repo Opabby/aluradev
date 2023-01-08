@@ -40,3 +40,9 @@ body{
     border: none;
     border-radius: 8px;
 }
+
+hr{
+    width: 100%;
+    border: .5px solid #FFFFFF;
+    opacity: .3;
+}
