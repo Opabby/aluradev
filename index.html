@@ -17,9 +17,9 @@
             <img class="header_logo--alura" src="/images/ALURA.svg">
             <img class="header_logo--class" src="/images/logo.svg">
         </div>
-        <input class="header_searchbar" type="text" placeholder="Busque por algo">
+        <input class="header_searchbar hide" type="text" placeholder="Busque por algo">
         <div class="header_icons">
-            <button class="search_button search"><div class="header_icons--search"></div></button>
+            <button id="search_button" class="search_button search"><div class="header_icons--search"></div></button>
             <button id="menu_button" class="menu_button hamburger"><div class="header_icons--menu"></div></button>
         </div>
         <div class="header_user">
@@ -28,7 +28,7 @@
         </div>
     </header>
     <main class="main">
-        <nav class="main_nav">
+        <nav class="main_nav hide">
             <span class="main_nav--title text-transform">MENU</span>
             <ul class="main_nav--list">
                 <li class="main_nav--page">
@@ -70,6 +70,8 @@
                 <div class="form_personalizacao">
                     <select class="form_personalizacao--linguagem">
                         <option selected value="javascript">JavaScript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
                     </select>
                     <select class="form_personalizacao--cardcolor light-blue">
                         <option selected value="light-blue"></option>
@@ -79,5 +81,6 @@
             <button class="main_form--button button">Salvar projeto</button>
         </div>
     </main>
+    <script src="./main.js"></script>
 </body>
 </html>
