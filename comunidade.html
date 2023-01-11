@@ -5,8 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidade</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/editor.css">
+    <link rel="stylesheet" href="/css/cards.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header_logo">
+            <img class="header_logo--alura" src="/images/ALURA.svg">
+            <img class="header_logo--class" src="/images/logo.svg">
+        </div>
+        <input class="header_searchbar hide" type="text" placeholder="Busque por algo">
+        <div class="header_icons">
+            <button id="search_button" class="search_button search"><div class="header_icons--search"></div></button>
+            <button id="menu_button" class="menu_button hamburger"><div class="header_icons--menu"></div></button>
+        </div>
+        <a class="header_user">
+            <img class="header_user--photo" src="/images/Photo.svg">
+            <span class="header_user--name">John</span>
+        </a>
+    </header>
+    <main class="main">
+        <nav class="main_nav hide">
+            <span class="main_nav--title text-transform">MENU</span>
+            <ul class="main_nav--list">
+                <li class="main_nav--page">
+                    <img class="nav_page--icon" src="/images/icon_code.svg">
+                    <a href="/index.html" class="nav_page--link">Editor de código</a>
+                </li>
+                <li class="main_nav--page">
+                    <img class="nav_page--icon" src="/images/icon_users.svg">
+                    <a href="/comunidade.html" class="nav_page--link">Comunidade</a>
+                </li>
+                <hr>
+                <a class="nav_user">
+                    <img class="nav_user--photo" src="/images/Photo.svg">
+                    <span class="nav_user--name">John</span>
+                </a>
+            </ul>
+        </nav>
+        <div class="cards">
+            <div class="card">
+                <div class="color_card comunidade">
+                    <div class="container_editor">
+                        <div class="editor_buttons">
+                            <button class="editor_button--red"></button>
+                            <button class="editor_button--yellow"></button>
+                            <button class="editor_button--green"></button>
+                        </div>
+                        <div class="card_code"></div>
+                    </div>
+                </div>
+                <div class="card_info">
+                    <h3 class="card_title">Título do projeto</h3>
+                    <p class="card_description">Essa é a descrição do projeto</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/main.js"></script>
 </body>
 </html>
