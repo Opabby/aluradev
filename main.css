@@ -48,7 +48,7 @@
     opacity: 0.56;
 }
 
-.nav_page--link:active{
+.nav_page--link:hover, .nav_page--link:active{
     opacity: 1;
 }
 

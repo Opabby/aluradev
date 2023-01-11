@@ -18,18 +18,21 @@
 .header_icons{
     display: flex;
     gap: 2rem;
+    max-width: 10rem;
+    box-sizing: border-box;
 }
 
 .search_button, .menu_button{
     background-color: unset;
     border: none;
+    box-sizing: border-box;
 }
 
 .search{
     background-image: url(./images/search.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 1.75rem;
+
 }
 
 .hamburger{
@@ -45,8 +48,15 @@
 }
 
 .header_icons--search, .header_icons--menu{
-    width: 1.25rem;
+    width: unset;
     height: 1.25rem;
+    padding: 1.1rem 1.1rem;
+    box-sizing: border-box;
+}
+
+.header_icons--search:active, .header_icons--menu:active{
+    background: rgba(80, 129, 251, 0.16);
+    border-radius: 16px;
 }
 
 .header_searchbar{
@@ -128,5 +138,13 @@
         margin-left: 10rem;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        width: 5rem;
+    }
+    .header_user:hover{
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        padding: .75rem;
     }
 }
