@@ -1,0 +1,66 @@
+.main_form--projeto, .main_form--personalizacao{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-bottom: 2rem;
+}
+
+#nome_projeto, #descricao_projeto, .form_personalizacao--linguagem{
+    padding: 1rem .5rem;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Inter' !important;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+#nome_projeto:hover, #descricao_projeto:hover, .form_personalizacao--linguagem:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.form_personalizacao{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.form_personalizacao--linguagem{
+    color: var(--white);
+    opacity: .5;
+    width: 100%;
+}
+
+.form_personalizacao--cardcolor{
+    box-sizing: border-box;
+    padding: 1rem;
+    height: 3.1rem;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.light-blue{
+    background-color: var(--light-blue);
+}
+
+.main_form--button{
+    background-color: var(--blue);
+    color: var(--dark-blue);
+}
+
+.main_form--button:hover{
+    background-color: #7BA4FC;
+}
+
+@media screen and (min-width: 768px){
+    .form_personalizacao{
+        flex-direction: row;
+    }
+    .form_personalizacao--linguagem, .form_personalizacao--cardcolor{
+        width: 50% !important;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .main_form{
+        grid-column: 5/6;
+    }
+}

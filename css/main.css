@@ -1,0 +1,15 @@
+.main{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+}

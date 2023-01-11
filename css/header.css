@@ -29,14 +29,15 @@
 }
 
 .search{
-    background-image: url(./images/search.svg);
+    background-image: url(/images/search.svg);
     background-repeat: no-repeat;
     background-position: center;
-
+    width: 2rem;
+    height: 2rem;
 }
 
 .hamburger{
-    background-image: url(./images/menu.svg);
+    background-image: url(/images/menu.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -114,6 +115,7 @@
     .header{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        box-sizing: border-box;
     }
 
     .header_logo{
@@ -140,11 +142,17 @@
         align-items: center;
         justify-content: space-between;
         width: 5rem;
+        box-sizing: border-box;
     }
+
     .header_user:hover{
         cursor: pointer;
         background: rgba(255, 255, 255, 0.08);
         border-radius: 8px;
         padding: .75rem;
+    }
+
+    .search, .hamburger, hr{
+        display: none;
     }
 }

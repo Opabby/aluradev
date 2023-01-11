@@ -46,3 +46,7 @@ hr{
     border: .5px solid #FFFFFF;
     opacity: .3;
 }
+
+.hide{
+    display: none;
+}
