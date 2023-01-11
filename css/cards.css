@@ -24,10 +24,30 @@
 .card_info{
     background: rgba(0, 0, 0, 0.16);
     padding: 2rem;
+    border-radius: 8px;
 }
 
 .card_title{
     margin: 0;
+}
+
+.card_icons, .card_interactions, .card_interactions--comments, .card_interactions--likes, .card_creator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_interactions{
+    gap: 1.5rem;
+}
+
+.card_creator{
+    gap: .5rem;
+}
+
+.interactions_comments--icon, .interactions_likes--icon{
+    width: 1.5rem;
+    margin-right: .5rem;
 }
 
 @media screen and (min-width: 1024px){
