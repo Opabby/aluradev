@@ -32,25 +32,24 @@
     background-image: url(/images/search.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 2rem;
-    height: 2rem;
+    box-sizing: border-box;
 }
 
 .hamburger{
     background-image: url(/images/menu.svg);
     background-repeat: no-repeat;
     background-position: center;
+    box-sizing: border-box;
 }
 
 .close{
-    background-image: url(./images/close.svg);
+    background-image: url(/images/close.svg);
     background-repeat: no-repeat;
     background-position: center;
+    box-sizing: border-box;
 }
 
 .header_icons--search, .header_icons--menu{
-    width: unset;
-    height: 1.25rem;
     padding: 1.1rem 1.1rem;
     box-sizing: border-box;
 }
@@ -130,7 +129,10 @@
        margin: 0;
         width: auto;
         grid-column: 2/5;
-        
+    }
+
+    .header_searchbar:hover{
+        background: rgba(255, 255, 255, 0.24)
     }
 
     .header_user{
