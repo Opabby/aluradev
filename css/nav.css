@@ -42,6 +42,7 @@
 
 @media screen and (min-width: 1024px){
     .main_nav{
+        display: block !important;
         grid-column: 1/2;
     }
     .main_nav, .main_nav--list{
