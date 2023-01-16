@@ -41,6 +41,22 @@
     background-color: var(--light-blue);
 }
 
+.green{
+    background-color: var(--green);
+}
+
+.purple{
+    background-color: var(--purple);
+}
+
+.orange{
+    background-color: var(--orange);
+}
+
+.pink{
+    background-color: var(--pink);
+}
+
 .main_form--button{
     background-color: var(--blue);
     color: var(--dark-blue);
