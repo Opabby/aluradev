@@ -30,6 +30,7 @@
 }
 
 .form_personalizacao--cardcolor{
+    background-color: var(--light-blue);
     box-sizing: border-box;
     padding: 1rem;
     height: 3.1rem;
