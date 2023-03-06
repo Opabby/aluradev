@@ -65,21 +65,23 @@
             </div>
             <button class="editor_highlight">Visualizar com highlight</button>
         </div>
-        <div class="main_form">
-            <form class="main_form--projeto">
+        <form class="main_form">
+            <div class="main_form--projeto">
                 <span class="form_projeto--seuprojeto text-transform">Seu projeto</span>
                 <input id="nome_projeto" type="text" placeholder="Nome do seu projeto">
                 <textarea id="descricao_projeto" placeholder="Descrição do seu projeto"></textarea>
-            </form>
-            <form class="main_form--personalizacao">
+            </div>
+            <div class="main_form--personalizacao">
                 <span class="text-transform">Personalização</span>
                 <div class="form_personalizacao">
-                    <select class="form_personalizacao--linguagem">
+                    <label for="language"></label>
+                    <select required id="language" name="language" class="form_personalizacao--linguagem">
                         <option selected value="javascript">JavaScript</option>
                         <option value="html">HTML</option>
                         <option value="css">CSS</option>
                     </select>
-                    <select class="form_personalizacao--cardcolor card_color">
+                    <label for="cardcolor"></label>
+                    <select required id="cardcolor" name="cardcolor" class="form_personalizacao--cardcolor">
                         <option selected value="light-blue" class='light-blue'></option>
                         <option value="green" class='green'></option>
                         <option value="purple" class='purple'></option>
@@ -87,9 +89,9 @@
                         <option value="pink" class='pink'></option>
                     </select>
                 </div>
-            </form>
+            </div>
             <button class="main_form--button button">Salvar projeto</button>
-        </div>
+        </form>
     </main>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="./main.js"></script>
