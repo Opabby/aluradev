@@ -34,13 +34,29 @@ searchButton.onclick = function open() {
     }
 }
 
-const card = document.querySelector('.card');
-const cardIcons = document.querySelector('.card_icons');
+// select option to change card color
 
-card.addEventListener('mouseover', () => {
-    cardIcons.classList.remove('hide');
-})
+let cardColor = document.querySelector('#cardcolor');
+let language = document.querySelector('#language');
+let colorCard = document.querySelector('.color_card');
 
-card.addEventListener('mouseout', () => {
-    cardIcons.classList.add('hide');
+console.log(colorCard);
+
+cardColor.addEventListener("change", function(){
+    if (this.value == 'light-blue'){
+        colorCard.style.backgroundColor = "var(--light-blue)";
+        cardColor.style.backgroundColor = "var(--light-blue)";
+    } else if (this.value == 'green'){
+        colorCard.style.backgroundColor = "var(--green)";
+        cardColor.style.backgroundColor = "var(--green)";
+    } else if (this.value == 'purple'){
+        colorCard.style.backgroundColor = "var(--purple)";
+        cardColor.style.backgroundColor = "var(--purple)";
+    } else if (this.value == 'orange'){
+        colorCard.style.backgroundColor = "var(--orange)";
+        cardColor.style.backgroundColor = "var(--orange)";
+    } else {
+        colorCard.style.backgroundColor = "var(--pink)";
+        cardColor.style.backgroundColor = "var(--pink)";
+    }
 })
